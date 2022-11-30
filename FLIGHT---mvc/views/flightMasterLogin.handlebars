@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <h1 class="text-center" style="color: white;">flightMaster Login</h1>
+            <form method="post">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="someone@mail.com">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+                <div class="d-grid mt-4">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    {{#if message}}
+                        <p class="text-danger">{{message}}</p>
+                    {{/if}}
+                </div><br>
+                <div class="container" style="background-color:#f1f1f1">
+          <span class="psw">New User? <a href="/flightMasterRegister">Register Here</a></span>
+        </div>
+            </form>
+        </div>
+    </div>
+</div>

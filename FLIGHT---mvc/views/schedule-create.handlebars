@@ -1,0 +1,53 @@
+<div class="container">
+    <h1 class="text-center" style="color: white;">Add Flight Schedule</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post">
+                <div>
+                    <label for="flight_name">Flight Name</label>
+                        <select name="flight_name" id="flight_name" class="form-control">
+                            <option>--select--</option>
+                            <option value="IndiGo">IndiGo</option>
+                            <option value="Alliance Air">Alliance Air</option>
+                            <option value="Air India">Air India</option>
+                            <option value="Emirates Airlines">Emirates Airlines</option>
+                            <option value="AirAsia">AirAsia</option>
+                        </select>  
+                </div>
+                <div>
+                    <label for="flight_from">Flight From</label>
+                        <select name="flight_from" id="flight_from" class="form-control">
+                            <option>--select--</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="UAE">UAE</option>
+                        </select>  
+                </div>
+                <div>
+                    <label for="flight_to">Flight To</label>
+                        <select name="flight_to" id="flight_to" class="form-control">
+                            <option>--select--</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="UAE">UAE</option>
+                        </select>  
+                </div>
+                <div>
+                    <label for="flight_date">Flight Date :</label>
+                    <input type="date" class="form-control" name="flight_date" id="flight_date">
+                </div>
+                <div>
+                    <label for="flight_time">Flight Time :</label>
+                    <input type="time" class="form-control" name="flight_time" id="flight_time">
+                </div>
+                
+                
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

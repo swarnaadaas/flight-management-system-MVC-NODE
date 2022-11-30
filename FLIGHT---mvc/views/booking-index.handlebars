@@ -1,0 +1,35 @@
+<h1 class="text-center" style="color: white;">Booking Details</h1>
+<div class="container" style="background-color: white;">
+    <a href="/booking" class="btn btn-primary">+ New Booking</a>
+    <a href="/profileIndex" class="btn btn-primary">Your Profile</a>
+    {{!-- <a href="/passengerProfileEdit" class="btn btn-primary">Edit profile</a> --}}
+    <table class="table table-striped mt-4">
+        <tr>
+            <th>Ticket id</th>
+            <th>Flight from</th>
+            <th>Flight to</th>
+            <th>Flight name</th>
+            <th>Flight date</th>
+            <th>Flight time</th>
+            <th>Action</th>
+        </tr>
+        {{#each data}}
+        <tr>
+            <td>{{this.dataValues.id}}</td>
+            <td>{{this.dataValues.flight_from}}</td>
+            <td>{{this.dataValues.flight_to}}</td>
+            <td>{{this.dataValues.flight_name}}</td>
+            <td>{{this.dataValues.flight_date}}</td>
+            <td>{{this.dataValues.flight_time}}</td>
+            <td>
+                <a href="/bookingUpdate/{{this.dataValues.id}}">Edit</a> |
+                <a href="/bookingDelete/{{this.dataValues.id}}" class="text-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+        
+    </table>
+    <p class="text-end">You are logged in as: 
+        <b>{{identity.name}}</b>
+    </p>
+</div>

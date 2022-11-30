@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="text-center" style="color: white;">Update Flight Details</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post">
+                <div>
+                    <label for="flight_name">Flight Name</label>
+                    <input type="text" name="flight_name" id="flight_name" class="form-control" value="{{data.dataValues.flight_name}}">
+                </div>
+                <div>
+                    <label for="flight_from">Flight From</label>
+                    <input type="text" name="flight_from" id="flight_from" class="form-control" value="{{data.dataValues.flight_from}}">  
+                </div>
+                <div>
+                    <label for="flight_to">Flight To</label>
+                    <input type="text" name="flight_to" id="flight_to" class="form-control" value="{{data.dataValues.flight_to}}">  
+                </div>
+                <div>
+                    <label for="flight_date">Flight Date</label>
+                    <input type="date" name="flight_date" id="flight_date" class="form-control" value="{{data.dataValues.flight_date}}">  
+                </div>
+                <div>
+                    <label for="flight_time">Flight Time</label>
+                    <input type="time" name="flight_time" id="flight_time" class="form-control" value="{{data.dataValues.flight_time}}">  
+                </div>
+                
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary">Save Updates</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="container">
+    <h1 class="text-center" style="color: white";>Book Here..</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post">
+                <div>
+                    <label for="flight_from">Flight From :</label>
+                    <input type="text" placeholder="From" class="form-control" name="flight_from" id="flight_from">
+                </div>
+                <div>
+                    <label for="flight_to">Flight to :</label>
+                    <input type="flight_to" placeholder="Destination" class="form-control" name="flight_to" id="flight_to">           
+                </div>
+                 <div>
+                    <label for="flight_name">Flight Name</label>
+                        <select name="flight_name" id="flight_name" class="form-control">
+                            <option>--select--</option>
+                            <option value="IndiGo">IndiGo</option>
+                            <option value="Alliance Air">Alliance Air</option>
+                            <option value="Air India">Air India</option>
+                            <option value="Akasa Air">Akasa Air</option>
+                            <option value="AirAsia">AirAsia</option>
+                        </select>               
+                </div>
+                <div>
+                    <label for="flight_date">Flight Date :</label>
+                    <input type="date" class="form-control" name="flight_date" id="flight_date">
+                </div>
+                <div>
+                    <label for="flight_time">Flight Time :</label>
+                    <input type="time" class="form-control" name="flight_time" id="flight_time">
+                </div>
+                <div>
+                    <label for="passenger_id">Passenger Id :</label>
+                    <input type="number" class="form-control" name="passenger_id" id="passenger_id">
+                </div>
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary">Book ticket</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

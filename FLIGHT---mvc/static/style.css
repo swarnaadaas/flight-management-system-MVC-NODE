@@ -1,0 +1,21 @@
+ body {
+  background-image: url(bg.jpg);
+  background-size: cover;
+} 
+
+form {
+  border: 3px solid #b6c7f7;
+  border-radius: 10%;
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 70%;
+  height: 83%;
+  background-color: white;
+  padding: 30px;
+}
+.con {
+  position: relative;
+  top: 150px;
+}
+

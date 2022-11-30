@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="text-center" style="color: white;">Update Your Profile</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" value="{{data.dataValues.name}}">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" value="{{data.dataValues.email}}" readonly>
+
+
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control" name="password" id="password"
+                        value="{{data.dataValues.password}}">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="number" class="form-control" name="phone" id="phone" value="{{data.dataValues.phone}}">
+                </div>
+
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary">Update Profile</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

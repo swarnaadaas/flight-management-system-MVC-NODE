@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <h1 class="text-center" style="color: white;">Passenger Registeration</h1>
+            <form method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Swarna Das">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="swarna@example.com">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" class="form-control">
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="phone" id="phone" class="form-control">
+                </div>
+                
+                <div class="d-grid mt-4">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    {{#if message}}
+                        <p class="text-danger">{{message}}</p>
+                    {{/if}}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

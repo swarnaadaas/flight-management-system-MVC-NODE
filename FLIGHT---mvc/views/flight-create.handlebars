@@ -1,0 +1,43 @@
+<div class="container">
+    <h1 class="text-center" style="color: white;">Add Flight Details</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post">
+                <div>
+                    <label for="flight_name">Flight Name</label>
+                        <select name="flight_name" id="flight_name" class="form-control">
+                            <option>--select--</option>
+                            <option value="IndiGo">IndiGo</option>
+                            <option value="Alliance Air">Alliance Air</option>
+                            <option value="Air India">Air India</option>
+                            <option value="Emirates Airlines">Emirates Airlines</option>
+                            <option value="AirAsia">AirAsia</option>
+                        </select>  
+                </div>
+                <div>
+                    <label for="flight_type">Flight Type</label>
+                        <select name="flight_type" id="flight_type" class="form-control">
+                            <option>--select--</option>
+                            <option value="domestic">Domestic airlines</option>
+                            <option value="international">International airlines</option>
+                        </select>               
+                </div>
+                <div>
+                    <label for="flight_capacity">Flight Capacity</label>
+                    <select name="flight_capacity" id="flight_capacity" class="form-control">
+                        <option>--select--</option>
+                        <option value="222 seated">222 seated</option>
+                        <option value="70 seated">70 seated</option>
+                        <option value="256 seated">256 seated</option>
+                        <option value="399 seated">399 seated</option>
+                        <option value="180 seated">180 seated</option>
+                    </select>
+                </div>
+                
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
